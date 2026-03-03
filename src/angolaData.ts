@@ -1,0 +1,23 @@
+export const angolaData: Record<string, string[]> = {
+  "Bengo": ["Ambriz", "Bula Atumba", "Dande", "Dembos", "Nambuangongo", "Pango Aluquém"],
+  "Benguela": ["Balombo", "Baía Farta", "Benguela", "Bocoio", "Caimbambo", "Catumbela", "Chongorói", "Ganda", "Lobito", "Lubango"],
+  "Bié": ["Andulo", "Camacupa", "Catabola", "Chitembo", "Chinguar", "Cuemba", "Cunhinga", "Cuito", "Nharea"],
+  "Cabinda": ["Belize", "Buco-Zau", "Cabinda", "Cacongo"],
+  "Cuando": ["Menongue", "Cuchi", "Cuito Cuanavale", "Nancova"],
+  "Cubango": ["Mavinga", "Dirico", "Rivungo", "Calai", "Cuangar"],
+  "Cuanza Norte": ["Ambaca", "Banga", "Bolongongo", "Cambambe", "Cazengo", "Golungo Alto", "Gonguembo", "Lucala", "Quiculungo", "Samba Caju"],
+  "Cuanza Sul": ["Amboim", "Cassongue", "Cela", "Conda", "Ebo", "Libolo", "Mussende", "Porto Amboim", "Quibala", "Quilenda", "Seles", "Sumbe"],
+  "Cunene": ["Cahama", "Cuanhama", "Curoca", "Cuvelai", "Namacunde", "Ombadja"],
+  "Huambo": ["Bailundo", "Caála", "Catchiungo", "Ecunha", "Huambo", "Londuimbali", "Longonjo", "Mungo", "Tchicala-Tcholoanga", "Tchindjenje", "Ucuma", "Chinjenje", "Kalenga"],
+  "Huíla": ["Caconda", "Cacula", "Caluquembe", "Chiange", "Chibia", "Chicomba", "Chipindo", "Cuvango", "Humpata", "Jamba", "Lubango", "Matala", "Quilengues", "Quipungo"],
+  "Icolo e Bengo": ["Icolo e Bengo", "Quiçama", "Bom Jesus", "Cabiri"],
+  "Luanda": ["Luanda", "Belas", "Cacuaco", "Cazenga", "Viana", "Kilamba Kiaxi", "Talatona", "Maianga", "Ingombota", "Sambizanga", "Rangel"],
+  "Lunda Norte": ["Cambulo", "Capenda-Camulemba", "Caungula", "Chitato", "Cuilo", "Cuango", "Lucapa", "Lubalo", "Lóvua", "Xá-Muteba"],
+  "Lunda Sul": ["Cacolo", "Dala", "Muconda", "Saurimo"],
+  "Malanje": ["Cacuso", "Calandula", "Cambundi-Catembo", "Cangandala", "Caombo", "Cuaba Nzogo", "Cunda-dia-Baze", "Luquembo", "Malanje", "Marimba", "Massango", "Mucari", "Quela", "Quirima"],
+  "Moxico": ["Moxico", "Camanongue", "Léua", "Lucano", "Cameia"],
+  "Cassai Oriental": ["Luau", "Alto Zambeze", "Bundas", "Luchazes"],
+  "Namibe": ["Bibala", "Camucuio", "Moçâmedes", "Tômbua", "Virei"],
+  "Uíge": ["Ambuíla", "Bembe", "Buengas", "Bungo", "Damba", "Milunga", "Mucaba", "Negage", "Puri", "Quimbele", "Quitexe", "Sanza Pombo", "Songo", "Uíge", "Maquela do Zombo", "Zombo"],
+  "Zaire": ["Cuimba", "M'banza Kongo", "Noqui", "N'zeto", "Soyo", "Tomboco"]
+};
