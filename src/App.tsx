@@ -1159,7 +1159,7 @@ const LessonGenerator = ({ user, onUpdateUser, showHistory, setShowHistory, them
     }
 
     try {
-      const { GoogleGenAI } = await import('@google/genai');
+      // Use top-level import instead of dynamic import to prevent crashes
       const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY as string });
       const modelName = "gemini-3-flash-preview";
 
@@ -1530,13 +1530,16 @@ Formate a resposta em Markdown rico.`;
 
             <div className="md:col-span-3">
               <label className={`block text-xs font-bold uppercase tracking-wider mb-1 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>Sumário</label>
-              <select 
+              <input 
+                list="sumarios-list"
                 className={`w-full px-4 py-2.5 rounded-xl border outline-none focus:ring-2 focus:ring-emerald-500 transition-all font-medium ${theme === 'dark' ? 'bg-white border-gray-200 text-black' : 'bg-white border-gray-200 text-gray-900'}`}
                 value={formData.sumario}
                 onChange={e => setFormData({...formData, sumario: e.target.value})}
-              >
-                {Array.isArray(sumariosList) && sumariosList.map((s: string) => <option key={s} value={s}>{s}</option>)}
-              </select>
+                placeholder="Selecione ou digite o sumário"
+              />
+              <datalist id="sumarios-list">
+                {Array.isArray(sumariosList) && sumariosList.map((s: string) => <option key={s} value={s} />)}
+              </datalist>
             </div>
 
             <div>
@@ -2530,7 +2533,7 @@ const AdminPanel = () => {
   const syncNews = async () => {
     setSyncingNews(true);
     try {
-      const ai = new GoogleGenAI({ apiKey: (process.env as any).GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY as string });
       
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
